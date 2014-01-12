@@ -1,6 +1,6 @@
 <ul>
     <li>about</li>
-    <% if !@pages.blank? %>
+    <% if !@pages.empty? %>
         <% for page in @pages %>
         <li><%= link_to page.title, page_path(page) %></li>
         <% end %>
