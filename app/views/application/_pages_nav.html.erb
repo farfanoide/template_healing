@@ -1,0 +1,11 @@
+<ul>
+    <li>about</li>
+    <% if !@pages.blank? %>
+        <% for page in @pages %>
+        <li><%= link_to page.title, page_path(page) %></li>
+        <% end %>
+    <% else %>
+        <h2>no pages</h2>
+    <% end %>
+    <li>contact</li>
+</ul>
