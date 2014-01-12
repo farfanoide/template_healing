@@ -1,4 +1,5 @@
 TemplateHealing::Application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
   resources :pages
   root 'pages#home'
   # The priority is based upon order of creation: first created -> highest priority.

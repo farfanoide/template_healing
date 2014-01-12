@@ -43,3 +43,12 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# editor
+gem 'ckeditor'
+gem "carrierwave"
+gem "mini_magick"
+
+# heroku
+gem 'pg'
+gem 'rails_12factor', group: :production
