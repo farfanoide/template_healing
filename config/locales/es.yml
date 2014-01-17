@@ -3,3 +3,5 @@ es:
     attributes:
       testimony:
         person: "persona"
+        occupation: "ocupacion"
+        content: "contenido"

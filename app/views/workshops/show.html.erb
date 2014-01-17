@@ -11,4 +11,5 @@
 </p>
 
 <%= link_to 'Edit', edit_workshop_path(@workshop) %> |
-<%= link_to 'Back', workshops_path %>
+<%= link_to 'Back', workshops_path %> |
+<%= link_to 'Destroy', @workshop, method: :delete, data: { confirm: 'Are you sure?' } %>
