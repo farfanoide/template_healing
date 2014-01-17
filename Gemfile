@@ -52,3 +52,7 @@ gem "mini_magick"
 # heroku
 gem 'pg'
 gem 'rails_12factor', group: :production
+
+# globalization
+gem 'globalize', '~> 4.0.0'
+

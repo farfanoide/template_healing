@@ -1,7 +1,16 @@
 TemplateHealing::Application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
-  resources :pages
-  root 'pages#home'
+
+  scope ":locale", locale: /#{I18n.available_locales.join("|")}/ do
+    resources :pages
+    resources :workshops
+    resources :testimonies
+    root 'pages#home'
+  end
+
+  get '*path', to: redirect("/#{I18n.default_locale}/%{path}")
+  get '', to: redirect("/#{I18n.default_locale}")
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

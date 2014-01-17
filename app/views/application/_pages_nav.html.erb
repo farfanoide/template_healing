@@ -1,5 +1,5 @@
 <ul>
-    <li>about</li>
+    <!-- <li><a href="<%= url_for :root %>"> home</a></li> -->
     <% if !@pages.empty? %>
         <% for page in @pages %>
         <li><%= link_to page.title, page_path(page) %></li>

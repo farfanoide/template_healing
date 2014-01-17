@@ -8,7 +8,7 @@ class PagesController < ApplicationController
   end
   
   def home
-    @home = "fuckyou"
+    @home = "template healing"
   end
 
   # GET /pages/1

@@ -1,0 +1,5 @@
+es:
+  activerecord:
+    attributes:
+      testimony:
+        person: "persona"

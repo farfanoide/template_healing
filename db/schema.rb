@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140112155900) do
+ActiveRecord::Schema.define(version: 20140115020825) do
 
   create_table "ckeditor_assets", force: true do |t|
     t.string   "data_file_name",               null: false
@@ -28,6 +28,18 @@ ActiveRecord::Schema.define(version: 20140112155900) do
 
   add_index "ckeditor_assets", ["assetable_type", "assetable_id"], name: "idx_ckeditor_assetable", using: :btree
   add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], name: "idx_ckeditor_assetable_type", using: :btree
+
+  create_table "page_translations", force: true do |t|
+    t.integer  "page_id",    null: false
+    t.string   "locale",     null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "title"
+    t.text     "body"
+  end
+
+  add_index "page_translations", ["locale"], name: "index_page_translations_on_locale", using: :btree
+  add_index "page_translations", ["page_id"], name: "index_page_translations_on_page_id", using: :btree
 
   create_table "pages", force: true do |t|
     t.string   "title"
