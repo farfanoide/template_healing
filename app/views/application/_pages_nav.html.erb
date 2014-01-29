@@ -1,14 +1,40 @@
-<ul>
-    <!-- <li><a href="<%= url_for :root %>"> home</a></li> -->
-
+<nav id="nav">
+    <ul>
     <li><%= link_to "workshops", controller: "workshops" %></li>
     <li><%= link_to "testimonies", controller: "testimonies" %></li>
     <% if !@pages.empty? %>
-        <% for page in @pages %>
-        <li><%= link_to page.title, page_path(page) %></li>
-        <% end %>
+    <% for page in @pages %>
+    <li><%= link_to page.title, page_path(page) %></li>
+    <% end %>
     <% else %>
-        <h2>no pages</h2>
+    <h2>no pages</h2>
     <% end %>
     <li>contact</li>
+        <!-- <li><a href="index.html">Home</a></li>
+        <li>
+            <span>Dropdown</span>
+            <ul>
+                <li><a href="#">Lorem ipsum dolor</a></li>
+                <li><a href="#">Magna phasellus</a></li>
+                <li><a href="#">Etiam dolore nisl</a></li>
+                <li>
+                    <span>And a submenu &hellip;</span>
+                    <ul>
+                        <li><a href="#">Lorem ipsum dolor</a></li>
+                        <li><a href="#">Phasellus consequat</a></li>
+                        <li><a href="#">Magna phasellus</a></li>
+                        <li><a href="#">Etiam dolore nisl</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Veroeros feugiat</a></li>
+            </ul>
+        </li>
+        <li><a href="left-sidebar.html">Left Sidebar</a></li>
+        <li><a href="right-sidebar.html">Right Sidebar</a></li>
+        <li><a href="no-sidebar.html">No Sidebar</a></li> -->
+    </ul>
+</nav>
+<ul>
+    <!-- <li><a href="<%= url_for :root %>"> home</a></li> -->
+
 </ul>

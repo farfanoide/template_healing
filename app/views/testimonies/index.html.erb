@@ -1,31 +1,31 @@
-<h1>Listing testimonies</h1>
+<h1><%= t ".title" %> </h1>
+<div class="testimonies-wrapper">
 
-<table>
-  <thead>
-    <tr>
-      <th>Person</th>
-      <th>Occupation</th>
-      <th>Content</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @testimonies.each do |testimony| %>
-      <tr>
-        <td><%= testimony.person %></td>
-        <td><%= testimony.occupation %></td>
-        <td><%= testimony.content %></td>
-        <td><%= link_to 'Show', testimony %></td>
-        <td><%= link_to 'Edit', edit_testimony_path(testimony) %></td>
-        <td><%= link_to 'Destroy', testimony, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+  <% @testimonies.each do |testimony| %>
+  <div class="testimony">
+    <section class="media attribution">
+      <%= image_tag('twitter-light.png', class: "img") %>
+      <!-- <img src="img/twitter-light.png" alt="mandame info" class="img" /> -->
+      <div class="bd">
+        <p><a href="#" class="t-name"><%= testimony.person %></a></p>
+        <p class="t-occu"><%= testimony.occupation %></p>
+      </div>
+      <div class="info">
+        <blockquote>
+          <%= testimony.content %>
+        </blockquote>
+      </div>
+      <div class="actions">
+        <%= link_to 'Show', testimony %>
+        <%= link_to 'Edit', edit_testimony_path(testimony) %>
+        <%= link_to 'Destroy', testimony, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
+    </section>
+  </div>
+  <% end %>
+</div>
 
 <br>
+<br>
 
-<%= link_to 'New Testimony', new_testimony_path %>
+<%= link_to 'New Testimony', new_testimony_path, style: "clear=both" %>

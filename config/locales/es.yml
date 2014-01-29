@@ -1,4 +1,7 @@
 es:
+  testimonies:
+    index:
+      title: "Testimonios"
   activerecord:
     attributes:
       testimony:

@@ -5,14 +5,18 @@
 
     <!-- <title><%# if content_for(:title) ? yield content_for(:title) : "Creation Template" %></title> -->
 
-  <?php endif ?>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 <%= render 'pages_nav' %>
-<%= yield %>
+<div class="wrapper">
+    <div class="content">
+        <%= render "flashes" %>
+        <%= yield %>
+    </div>
+</div>
 
 </body>
 </html>
