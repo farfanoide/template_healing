@@ -56,3 +56,5 @@ gem 'rails_12factor', group: :production
 # globalization
 gem 'globalize', '~> 4.0.0'
 
+# forms
+gem 'simple_form'
