@@ -1,10 +1,20 @@
 es:
+  save: guardar
+  back: volver
   testimonies:
-    index:
-      title: "Testimonios"
+    title: testimonios
+  workshops:
+    title: talleres
+    new:
+      title: nuevo taller
+  page:
+    create:
+      success: 'Pagina creada correctamente.'
+    update:
+      success: 'Pagina actualizada correctamente.'
   activerecord:
     attributes:
       testimony:
-        person: "persona"
-        occupation: "ocupacion"
-        content: "contenido"
+        person: persona
+        occupation: ocupacion
+        content: contenido
