@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Creation Template</title>
 
-    <!-- <title><%# if content_for(:title) ? yield content_for(:title) : "Creation Template" %></title> -->
+	<title><%= content_for?(:title) ? yield(:title) : "Creation Template" %></title>
 
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -13,10 +12,12 @@
 <%= render 'pages_nav' %>
 <div class="wrapper">
     <div class="content">
-        <%= render "flashes" %>
+        <%= render 'flashes' %>
         <%= yield %>
     </div>
 </div>
+<hr />
+<%= render 'footer' %>
 
 </body>
 </html>

@@ -48,10 +48,10 @@
 
 #nav > ul > li {
   @include transition(color .35s ease-in-out, border-color .35s ease-in-out);
-  border-radius: .5em;
   border: solid 1px transparent;
+  border-radius: .5em;
   display: inline-block;
-  margin: -9px .5em 0 ;
+  margin: -9px .5em 0;
   padding: .85em;
   text-transform: capitalize;
 }
@@ -128,7 +128,9 @@ nav a:focus {
 .main-nav a::after {
   display: inline-block;
   opacity: 0;
-  @include transition(transform .3s, opacity .2s);
+
+  @include transition-property (transform, opacity);
+  @include transition-duration(.3s, .2s);
 }
 
 .main-nav a::before {

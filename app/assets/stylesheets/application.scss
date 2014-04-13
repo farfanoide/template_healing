@@ -9,6 +9,8 @@
  * compiled file, but it's generally better to create a new file per style scope.
  */
 @import 'bourbon';
+@import 'modules/variables';
+@import 'modules/grid';
 @import "modules/general";
 @import "modules/nav";
 @import "modules/mediaelem";
@@ -16,6 +18,11 @@
 /*
  *= require_self
  */
-.alert-box {
-  @include transition(top .5s)
+
+@media (max-width: 767px){
+  [class*='col-']{
+    width: 100%;
+    padding-right: 0;
+  }
+  .content { padding: 0 .5em; }
 }

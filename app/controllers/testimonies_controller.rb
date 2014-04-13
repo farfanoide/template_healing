@@ -2,13 +2,11 @@ class TestimoniesController < ApplicationController
   before_action :set_testimony, only: [:show, :edit, :update, :destroy]
 
   # GET /testimonies
-  # GET /testimonies.json
   def index
     @testimonies = Testimony.all
   end
 
   # GET /testimonies/1
-  # GET /testimonies/1.json
   def show
   end
 
@@ -22,42 +20,34 @@ class TestimoniesController < ApplicationController
   end
 
   # POST /testimonies
-  # POST /testimonies.json
   def create
     @testimony = Testimony.new(testimony_params)
 
     respond_to do |format|
       if @testimony.save
         format.html { redirect_to @testimony, notice: 'Testimony was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @testimony }
       else
         format.html { render action: 'new' }
-        format.json { render json: @testimony.errors, status: :unprocessable_entity }
       end
     end
   end
 
   # PATCH/PUT /testimonies/1
-  # PATCH/PUT /testimonies/1.json
   def update
     respond_to do |format|
       if @testimony.update(testimony_params)
         format.html { redirect_to @testimony, notice: 'Testimony was successfully updated.' }
-        format.json { head :no_content }
       else
         format.html { render action: 'edit' }
-        format.json { render json: @testimony.errors, status: :unprocessable_entity }
       end
     end
   end
 
   # DELETE /testimonies/1
-  # DELETE /testimonies/1.json
   def destroy
     @testimony.destroy
     respond_to do |format|
       format.html { redirect_to testimonies_url }
-      format.json { head :no_content }
     end
   end
 

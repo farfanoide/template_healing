@@ -9,12 +9,25 @@ es:
       title: nuevo taller
   page:
     create:
-      success: 'Pagina creada correctamente.'
+      success: Pagina creada correctamente.
     update:
-      success: 'Pagina actualizada correctamente.'
+      success: Pagina actualizada correctamente.
+  users:
+    edit:
+      title: Editar administrador
+    new:
+      title: Crear nuevo administrador
   activerecord:
     attributes:
       testimony:
         person: persona
-        occupation: ocupacion
+        occupation: ocupación
         content: contenido
+    errors:
+      models:
+        user:
+          attributes:
+            password:
+              blank: La contraseña no puede estar en blanco
+            password_confirmation:
+              confirmation: Las contraseñas deben ser identicas
