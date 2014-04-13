@@ -1,8 +1,12 @@
 es:
+  language:
+    name: Español
   save: guardar
   back: volver
   testimonies:
     title: testimonios
+    edit:
+      title: editar testimonio
   workshops:
     title: talleres
     new:

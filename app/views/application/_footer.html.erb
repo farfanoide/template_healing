@@ -1,5 +1,7 @@
-<nav>
+<nav class="footer-nav">
   <ul class="main-nav">
-    <li><%= link_to t(:'user.new.link'), '#' %> </li>
+    <% I18n.available_locales.each do |locale| %>
+      <li><%= link_to_unless_current image_tag("#{locale}.png", class: :flag) + locale.to_s, locale: locale %></li>
+    <% end %>
   </ul>
 </nav>

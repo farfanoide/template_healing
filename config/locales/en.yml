@@ -1,13 +1,37 @@
 en:
+  language:
+    name: English
+  save: save
+  back:
   testimonies:
     title: testimonies
+    edit:
+      title: edit testimony
   workshops:
     title: workshops
     new:
       title: new workshop
+  page:
+    create:
+      success: Page successfully created
+    update:
+      success: Pagina actualizada correctamente.
+  users:
+    edit:
+      title: Editar administrador
+    new:
+      title: Crear nuevo administrador
   activerecord:
     attributes:
       testimony:
-        # person: person
-        # occupation: occupation
-        # content: content
+        person: persona
+        occupation: ocupación
+        content: contenido
+    errors:
+      models:
+        user:
+          attributes:
+            password:
+              blank: La contraseña no puede estar en blanco
+            password_confirmation:
+              confirmation: Las contraseñas deben ser identicas
