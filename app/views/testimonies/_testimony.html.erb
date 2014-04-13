@@ -1,0 +1,21 @@
+
+<div class="testimony col-1-3">
+  <section class="media attribution">
+  <%= image_tag('twitter-light.png', class: "img") %>
+  <!-- <img src="img/twitter-light.png" alt="mandame info" class="img" /> -->
+  <div class="bd">
+    <p><a href="#" class="t-name"><%= testimony.person %></a> <span class="tw-occu"><%= testimony.occupation %></span></p>
+    <!-- <p class="t&#45;occu"><%# testimony.occupation %></p> -->
+  </div>
+  <div class="info">
+    <blockquote>
+      <%= testimony.content %>
+    </blockquote>
+  </div>
+  <div class="actions tw-actions">
+    <%= link_to 'Show', testimony %>
+    <%= link_to 'Edit', edit_testimony_path(testimony) %>
+    <%= link_to 'Destroy', testimony, method: :delete, data: { confirm: 'Are you sure?' } %>
+  </div>
+  </section>
+</div>

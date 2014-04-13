@@ -1,4 +1,4 @@
-<h1><%= t '.title' %></h1>
+<h1><%= t 'workshops.title' %></h1>
 
 <% @workshops.each do |workshop| %>
   <td><%= workshop.title %></td>
@@ -7,4 +7,4 @@
   <td><%= link_to 'Edit', edit_workshop_path(workshop) %></td>
   <td><%= link_to 'Destroy', workshop, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 <% end %>
-<%= link_to 'New Workshop', new_workshop_path %>
+<%= link_to t('workshops.new.action'), new_workshop_path %>

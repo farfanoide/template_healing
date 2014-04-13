@@ -22,7 +22,16 @@
   float: right;
   margin-left: 10px;
 }
+.tw-occu {font-size: .7em;}
 
+.tw-actions {
+  font-size: .6em ;
+  color: transparent;
+  a { border: 0; }
+}
+.testimony:hover .tw-actions{
+  color: $gray;
+}
 // .media.twitter
 //   p
 //     margin-bottom: 2px

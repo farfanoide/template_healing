@@ -83,6 +83,7 @@ blockquote {
   border-left: solid 0.5em #ddd;
   padding: 1em 0 1em 2em;
   font-style: italic;
+  margin: 0;
 }
 
 p, ul, ol, dl, table { margin-bottom: 1em; }
@@ -128,6 +129,7 @@ hr:after { right: -1px; }
   font-size: .8em;
 }
 
+.page-title { text-align: center; }
 .wrapper { padding-top: 4em; }
 .content { padding: 0 2em; }
 
@@ -137,6 +139,7 @@ hr:after { right: -1px; }
   padding: .5em;
   width: 33.33%;
 }
+
 span.error {
   background: rgba(0, 0, 0, .1);
   border-radius: 3px;
@@ -164,6 +167,7 @@ span.error {
     background: #ef8376;
   }
 }
+
 form {
   text-align: center;
 
@@ -172,7 +176,7 @@ form {
     text-align: left;
     text-transform: capitalize;
   }
-  
+
   input[type='text'],
   input[type='password'],
   input[type='email'],

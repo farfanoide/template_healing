@@ -2,7 +2,7 @@ en:
   language:
     name: English
   save: save
-  back:
+  back: back
   testimonies:
     title: testimonies
     edit:
@@ -11,6 +11,9 @@ en:
     title: workshops
     new:
       title: new workshop
+      action: new workshop
+    edit:
+      title: edit workshop
   page:
     create:
       success: Page successfully created
