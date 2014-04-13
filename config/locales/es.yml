@@ -3,6 +3,8 @@ es:
     name: Español
   save: guardar
   back: volver
+  edit: editar
+  destroy: borrar
   testimonies:
     title: testimonios
     edit:

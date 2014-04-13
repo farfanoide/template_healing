@@ -3,6 +3,8 @@ en:
     name: English
   save: save
   back: back
+  edit: edit
+  destroy: destroy
   testimonies:
     title: testimonies
     edit:
