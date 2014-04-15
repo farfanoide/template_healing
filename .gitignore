@@ -18,3 +18,5 @@
 /public/uploads/*
 
 tags
+public/assets/*
+public/uploads/*
