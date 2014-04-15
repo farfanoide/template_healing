@@ -5,6 +5,7 @@ es:
   back: volver
   edit: editar
   destroy: borrar
+  confirmation: esta seguro?
   testimonies:
     title: testimonios
     edit:

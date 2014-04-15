@@ -5,7 +5,15 @@ module ApplicationHelper
   end
 
   def edit_link(object)
+    # TODO: add tooltips
     link_to iconize(:pencil), edit_polymorphic_path(object)
+  end
+
+  def destroy_link(object)
+    link_to iconize(:remove),
+      polymorphic_path(@page),
+      method: :delete,
+      data: { confirm: t('confirmation') }
   end
 
 end
