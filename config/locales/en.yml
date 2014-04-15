@@ -5,6 +5,7 @@ en:
   back: back
   edit: edit
   destroy: destroy
+  confirmation: are you sure?
   testimonies:
     title: testimonies
     edit:

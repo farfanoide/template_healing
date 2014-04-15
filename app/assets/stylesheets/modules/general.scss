@@ -137,10 +137,7 @@ hr:after { right: -1px; }
 .content { padding: 0 2em; }
 
 .testimony {
-  box-sizing: border-box;
-  float: left;
   padding: .5em;
-  width: 33.33%;
 }
 
 span.error {
@@ -209,4 +206,12 @@ form {
 [class^="icon-"], [class*=" icon-"] {
   vertical-align: middle;
   margin-right: .5em;
+}
+.admin-editable {
+  border: 1px solid transparent;
+  @include transition(border, .3s);
+  @include box-sizing(border-box);
+}
+.admin-editable:hover {
+  border: 1px dashed $gray;
 }

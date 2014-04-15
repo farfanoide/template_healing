@@ -11,9 +11,13 @@ module ApplicationHelper
 
   def destroy_link(object)
     link_to iconize(:remove),
-      polymorphic_path(@page),
+      polymorphic_path(object),
       method: :delete,
       data: { confirm: t('confirmation') }
+  end
+
+  def show_link(object)
+    link_to iconize(:eye), object
   end
 
 end

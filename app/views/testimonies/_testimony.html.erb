@@ -1,20 +1,21 @@
-
-<div class="testimony col-1-3">
-  <section class="media attribution">
-  <div class="bd">
-    <p>
-    <%= iconize :twitter %>
-    <a href="#" class="t-name"><%= testimony.person %></a>
-    <span class="tw-occu"><%= testimony.occupation %></span>
-    </p>
+<div class=" col-1-3">
+  <div class="testimony admin-editable">
+    <section class="media attribution">
+    <div class="bd">
+      <p>
+      <%= iconize :twitter %>
+      <a href="#" class="t-name"><%= testimony.person %></a>
+      <span class="tw-occu"><%= testimony.occupation %></span>
+      </p>
+    </div>
+    <div class="info">
+      <blockquote>
+        <%= testimony.content %>
+      </blockquote>
+    </div>
+    <div class="actions tw-actions">
+      <%= edit_link testimony %>
+    </div>
+    </section>
   </div>
-  <div class="info">
-    <blockquote>
-      <%= testimony.content %>
-    </blockquote>
-  </div>
-  <div class="actions tw-actions">
-    <%= edit_link testimony %>
-  </div>
-  </section>
 </div>
