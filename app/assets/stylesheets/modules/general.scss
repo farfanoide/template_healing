@@ -205,3 +205,8 @@ form {
   display: block;
   text-align: center;
 }
+
+[class^="icon-"], [class*=" icon-"] {
+  vertical-align: middle;
+  margin-right: .5em;
+}

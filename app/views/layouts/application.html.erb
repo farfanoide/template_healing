@@ -3,20 +3,27 @@
 <head>
 
   <title><%= content_for?(:title) ? yield(:title) : "Creation Template" %></title>
+
+  <!-- external stylesheets and fonts -->
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://i.icomoon.io/public/temp/46c4c3b0e4/UntitledProject1/style.css">
+  <!-- end external -->
+
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 <%= render 'pages_nav' %>
+
 <div class="wrapper">
   <%= link_to image_tag(:'logo.png'), :root, class: :logo %>
-    <div class="content">
-        <%= render 'flashes' %>
-        <%= yield %>
-    </div>
+  <div class="content">
+      <%= render 'flashes' %>
+      <%= yield %>
+  </div>
 </div>
+
 <br />
 <%= render 'footer' %>
 
