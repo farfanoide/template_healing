@@ -54,6 +54,8 @@ gem "mini_magick"
 gem 'pg'
 gem 'rails_12factor', group: :production
 
+gem 'pry-rails', :group => :development
+
 # globalization
 gem 'globalize', '~> 4.0.0'
 
