@@ -30,9 +30,9 @@ en:
   activerecord:
     attributes:
       testimony:
-        person: persona
-        occupation: ocupación
-        content: contenido
+        person: person
+        occupation: ocupation
+        content: content
     errors:
       models:
         user:

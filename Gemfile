@@ -50,6 +50,9 @@ gem 'ckeditor'
 gem "carrierwave"
 gem "mini_magick"
 
+# navigation links
+gem 'nav_lynx'
+
 # heroku
 gem 'pg'
 gem 'rails_12factor', group: :production

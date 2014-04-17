@@ -1,7 +1,7 @@
-
-.media {
-  margin: 10px
-}
+//
+// .media {
+//   margin: 10px
+// }
 .media, .bd {
   overflow: hidden;
   _overflow: visible;
@@ -24,12 +24,17 @@
 }
 .tw-occu {font-size: .7em;}
 
-.tw-actions {
-  font-size: .6em ;
+.actions {
   color: transparent;
+  font-size: .6em ;
+  text-align: right;
+
   a { border: 0; }
 }
-.testimony:hover .tw-actions{
+.admin-editable {
+  padding: 1em;
+}
+.admin-editable:hover .actions{
   color: $dark-gray;
 }
 // .media.twitter

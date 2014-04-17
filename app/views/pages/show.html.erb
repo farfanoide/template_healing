@@ -1,8 +1,10 @@
-<h1 class="page-title"><%= @page.title %></h1>
-<p>
-  <%= simple_format @page.body %>
-</p>
-
-<%= edit_link @page %>
-<%= destroy_link @page %>
-<%= link_to t('back'), pages_path %>
+<div class="admin-editable">
+  <h1 class="page-title"><%= @page.title %></h1>
+  <div class="page-body">
+    <%= simple_format @page.body %>
+  </div>
+  <div class="actions">
+    <%= edit_link @page %>
+    <%= destroy_link @page %>
+  </div>
+</div>

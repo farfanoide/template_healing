@@ -1,10 +1,10 @@
 <nav id="nav">
   <ul class="main-nav">
-    <li><%= link_to t(:'workshops.title'), controller: "workshops" %></li>
-    <li><%= link_to t(:'testimonies.title'), controller: "testimonies" %></li>
+    <li><%= nav_link_to t(:'workshops.title'), controller: "workshops" %></li>
+    <li><%= nav_link_to t(:'testimonies.title'), controller: "testimonies" %></li>
     <% @pages.each do |page| %>
-      <li><%= link_to page.title, page_path(page) %></li>
+      <li><%= nav_link_to page.title, page_path(page) %></li>
     <% end %>
-    <li><%= link_to 'contact', '#' %></li>
+    <li><%= nav_link_to 'contact', '#' %></li>
   </ul>
 </nav>

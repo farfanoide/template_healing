@@ -148,10 +148,16 @@ nav a:focus {
 .main-nav a:hover::before,
 .main-nav a:hover::after,
 .main-nav a:focus::before,
-.main-nav a:focus::after {
+.main-nav a:focus::after,
+.main-nav .selected::after,
+.main-nav .selected::before,
+{
   @include transform(translateX(0));
   opacity: 1;
 }
+
+.main-nav .selected:hover::after { @include transform(translateX(-5px)); }
+.main-nav .selected:hover::before { @include transform(translateX(5px)); }
 
 .footer-nav{
   left: 0;
@@ -172,4 +178,8 @@ nav a:focus {
 .flag {
   margin: 0 10px 3px 0;
   vertical-align: middle;
+}
+
+.selected:hover {
+  color: $green;
 }

@@ -2,11 +2,9 @@
   <div class="testimony admin-editable">
     <section class="media attribution">
     <div class="bd">
-      <p>
-      <%= iconize :twitter %>
+      <%= iconize :testimony %>
       <a href="#" class="t-name"><%= testimony.person %></a>
       <span class="tw-occu"><%= testimony.occupation %></span>
-      </p>
     </div>
     <div class="info">
       <blockquote>
@@ -15,6 +13,7 @@
     </div>
     <div class="actions tw-actions">
       <%= edit_link testimony %>
+      <%= destroy_link testimony %>
     </div>
     </section>
   </div>

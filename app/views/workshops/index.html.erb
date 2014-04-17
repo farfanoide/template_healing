@@ -1,10 +1,5 @@
-<h1><%= t 'workshops.title' %></h1>
+<h1 class="page-title"><%= t 'workshops.title' %></h1>
 
-<% @workshops.each do |workshop| %>
-  <td><%= workshop.title %></td>
-  <td><%= workshop.description %></td>
-  <td><%= link_to 'Show', workshop %></td>
-  <td><%= link_to 'Edit', edit_workshop_path(workshop) %></td>
-  <td><%= link_to 'Destroy', workshop, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-<% end %>
-<%= link_to t('workshops.new.action'), new_workshop_path %>
+<%= render @workshops %>
+
+<%= link_to t('workshops.new.action').html_safe, new_workshop_path %>

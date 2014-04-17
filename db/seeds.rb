@@ -10,4 +10,34 @@ _about_body = "<h2>What is a Template?</h2><p>A template is similar to an archit
 Page.create(title: "about", body: _about_body)
 
 Testimony.create!(person: 'mama', occupation: 'madre', content: 'ponete el poncho q hace frio')
+Testimony.create!(person: 'atreyu', occupation: 'fantasia', content: 'falcoooor!!!!')
+Testimony.create!(person: 'mama', occupation: 'madre', content: 'ponete el poncho q hace frio')
+Testimony.create!(person: 'mama', occupation: 'madre', content: 'ponete el poncho q hace frio')
 Testimony.create!(person: 'magolla', occupation: 'developer', content: 'zarpado en vim fieja!')
+
+Workshop.create!(
+title: 'Introducción a la Creación de Plantillas Taller de Sanadores 1-DAY',
+description: 'Este taller ofrece una visión general del curso de Nivel 1, con una introducción al sistema de chakras (centros de energía dentro del cuerpo), las fases energéticas de desarrollo y puesta a tierra y los cables cósmicos. Durante el día usted recibirá varias sesiones de curación en estas áreas. También profundizará su capacidad de sintonizar con su intuición natural y aprenderán a usar radiestesia péndulo'
+)
+
+Workshop.create!(
+title: ' Nivel 1 | Psicología Energética ',
+description: ' Enseña la energética de nuestro ser (sistema de chakras, etapas de desarrollo, puesta a tierra y los cables cósmicos, masculino y femenino divino, etc), y la forma de interactuar con la conciencia de la anatomía espiritual, físico, mental y emocional. Da un instrumento práctico de diagnóstico que surge un problema y cómo sanar en nosotros mismos, los demás oa distancia.  '
+)
+
+Workshop.create!(
+title: ' Nivel 2 | Potencial Puro ',
+description: ' Le permite interactuar con la web de la creación, la enseñanza de cómo conectarse y tocar correas creación divina. Le enseña cómo mover la conciencia a un nivel más amplio, ilusiones limitantes claras, llegar a los puntos ciegos con un receptor sombra, mejorar nuevas plantillas con estructuras de diamantes energéticos y restaurar a su potencial puro.  '
+)
+Workshop.create!(
+title: ' Nivel 3 | Diseño Divino ',
+description: ' Se le enseña a cambiar la conciencia sin canalizar. El trabajo directo de la conciencia creación, este nivel le permite ver realmente ilusión, contraer realidades que limitan y volver al proyecto original de la luz, el designio divino, el ADN y la Mente Divina Milagro.  '
+)
+Workshop.create!(
+title: ' Nivel 4 | Libertad ',
+description: ' Se madura y despierta su propio maestro interior y esta conciencia le da la autoridad personal para sanar patrones inconscientes ocultos. Se aprende a trabajar más profundamente con las guías del alcohol, y cortar a través de la ilusión y de darle la libertad a ser realmente en el ahora.  '
+)
+Workshop.create!(
+title: ' Level 5 | I AM ',
+description: ' Utilizando las herramientas de los talleres anteriores, hay una profundización del despertar de su verdadero yo. Esta clase proporciona una profunda limpieza de la realidad consensuada y creencias colectivas que le permite abrir a abrazar la libertad, la alegría natural y el flujo de la vida.  '
+)
