@@ -25,7 +25,7 @@ class TestimoniesController < ApplicationController
 
     respond_to do |format|
       if @testimony.save
-        format.html { redirect_to @testimony, notice: 'Testimony was successfully created.' }
+        format.html { redirect_to testimonies_url, notice: t(:'testimonies.create.success') }
       else
         format.html { render action: 'new' }
       end
@@ -36,7 +36,7 @@ class TestimoniesController < ApplicationController
   def update
     respond_to do |format|
       if @testimony.update(testimony_params)
-        format.html { redirect_to @testimony, notice: 'Testimony was successfully updated.' }
+        format.html { redirect_to testimonies_url, notice: t(:'testimonies.update.success')}
       else
         format.html { render action: 'edit' }
       end

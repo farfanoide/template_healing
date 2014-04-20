@@ -147,18 +147,20 @@ hr:after { right: -1px; }
   padding: .5em;
 }
 
-span.error {
-  background: rgba(0, 0, 0, .1);
+.error {
+  background: $light-shadow;
+  color: $red;
   border-radius: 3px;
   font-size: .7em;
   padding: .3em .5em;
+  text-shadow: 0 1px $white-shadow;
 }
 
 .button {
-  background: #df7366;
+  background: $red;
   border-radius: 3px;
   border: 0;
-  color: #fff;
+  color: $white;
   cursor: pointer;
   display: inline-block;
   font-size: .8em;
@@ -170,13 +172,15 @@ span.error {
   text-transform: capitalize;
 
   &:hover{
-    color: #fff;
-    background: #ef8376;
+    color: $white;
+    background: $light-red;
   }
 }
 
 form {
   text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
 
   label{
     display: block;
@@ -187,20 +191,22 @@ form {
   input[type='text'],
   input[type='password'],
   input[type='email'],
-  textarea
-  {
-    border-radius: 3px;
+  textarea {
+    @include box-sizing(border-box);
     border: 1px solid $gray;
-    width: 100%;
+    border-radius: 3px;
     padding: .3em;
+    width: 100%;
+
     &:focus, &:active {
-      outline: none;
       @include box-shadow(inset 0 0 3px $gray);
       border: 1px solid rgba(128, 128, 128, 0.3);
+      outline: none;
     }
   }
+
   textarea {
-    background-color: white;
+    background-color: #fff;
     resize: none;
   }
 }
@@ -212,15 +218,22 @@ form {
 }
 
 [class^="icon-"], [class*=" icon-"] {
-  vertical-align: middle;
   margin-right: .5em;
+  vertical-align: middle;
 }
+
 .admin-editable {
   @include box-sizing(border-box);
   @include transition(border, .4s);
-  border-radius: .2em;
   border: 1px dashed transparent;
+  border-radius: .2em;
 }
+
 .admin-editable:hover {
   border: 1px dashed $dark-gray;
+}
+
+.cke_top, .cke_bottom {
+  background: $white !important;
+  background-image: none !important;
 }

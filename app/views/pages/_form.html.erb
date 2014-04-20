@@ -5,10 +5,10 @@
   <div class="field">
     <%= f.cktext_area :body %>
   </div>
-  <div class="field">
-    <%= f.input :visible %>
-  </div>
+  <!-- <div class="field"> -->
+  <!--   <%# f.input :visible %> -->
+  <!-- </div> -->
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit t(:save), class: :button %>
   </div>
 <% end %>

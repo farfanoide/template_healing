@@ -29,7 +29,7 @@ class PagesController < ApplicationController
 
     respond_to do |format|
       if @page.save
-        format.html { redirect_to @page, notice: t(:'page.create.success')}
+        format.html { redirect_to @page, notice: t(:'pages.create.success')}
       else
         format.html { render action: 'new' }
       end
@@ -40,7 +40,7 @@ class PagesController < ApplicationController
   def update
     respond_to do |format|
       if @page.update(page_params)
-        format.html { redirect_to @page, notice: t(:'page.update.success')}
+        format.html { redirect_to @page, notice: t(:'pages.update.success')}
       else
         format.html { render action: 'edit' }
       end

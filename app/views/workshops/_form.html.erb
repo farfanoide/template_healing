@@ -1,11 +1,9 @@
 <%= simple_form_for(@workshop) do |f| %>
   <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+    <%= f.input :title %><br>
   </div>
   <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_area :description %>
+    <%= f.input :description %><br>
   </div>
   <div class="actions">
     <%= f.submit t('save'), class: :button %>

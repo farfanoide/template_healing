@@ -1,6 +1,7 @@
 es:
   language:
     name: Español
+  cancel: cancelar
   save: guardar
   back: volver
   edit: editar
@@ -10,11 +11,19 @@ es:
     title: testimonios
     edit:
       title: editar testimonio
+    update:
+      success: Testimonio correctamente actualizado.
+    create:
+      success: Testimonio correctamente creado.
   workshops:
     title: talleres
     new:
       title: nuevo taller
-  page:
+  pages:
+    new:
+      title: Crear nueva Pagina
+    edit:
+      title: Editando Pagina
     create:
       success: Pagina creada correctamente.
     update:
