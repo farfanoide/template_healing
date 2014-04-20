@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140117044729) do
+ActiveRecord::Schema.define(version: 20140420201413) do
 
   create_table "ckeditor_assets", force: true do |t|
     t.string   "data_file_name",               null: false
@@ -59,6 +59,30 @@ ActiveRecord::Schema.define(version: 20140117044729) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "testimony_translations", force: true do |t|
+    t.integer  "testimony_id", null: false
+    t.string   "locale",       null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "occupation"
+    t.text     "content"
+  end
+
+  add_index "testimony_translations", ["locale"], name: "index_testimony_translations_on_locale", using: :btree
+  add_index "testimony_translations", ["testimony_id"], name: "index_testimony_translations_on_testimony_id", using: :btree
+
+  create_table "workshop_translations", force: true do |t|
+    t.integer  "workshop_id", null: false
+    t.string   "locale",      null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "title"
+    t.text     "description"
+  end
+
+  add_index "workshop_translations", ["locale"], name: "index_workshop_translations_on_locale", using: :btree
+  add_index "workshop_translations", ["workshop_id"], name: "index_workshop_translations_on_workshop_id", using: :btree
 
   create_table "workshops", force: true do |t|
     t.string   "title"
