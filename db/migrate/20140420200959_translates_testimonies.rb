@@ -4,7 +4,7 @@ class TranslatesTestimonies < ActiveRecord::Migration
       occupation: :string,
       content: :text
     }, {
-      migrate_data: true
+      migrate_data: false
     })
   end
   def down
