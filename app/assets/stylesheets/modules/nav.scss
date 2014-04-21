@@ -103,7 +103,7 @@ nav a:focus {
 .footer-nav {
   font-size: .6em;
   left: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 1.5em 0;
   text-align: center;
   width: 100%;
@@ -112,6 +112,13 @@ nav a:focus {
   & > ul > li { margin: -13px .5em 0;}
 
   ul { padding-left: 0; }
+}
+
+.success {
+  border-radius: 0.2em;
+  border: 1px solid $green;
+  color: $green;
+  text-align: center;
 }
 
 .flag {
@@ -123,6 +130,54 @@ nav a:focus {
   color: $green;
 }
 
+.drop {
+  position: relative;
+
+  &:hover .drop-container {
+    opacity: 1;
+  }
+
+  .drop-container {
+    @include transition(opacity, .3s, ease-in);
+    background: $white;
+    border: 1px solid #fff;
+    border-radius: .2em;
+    bottom: 80%;
+    box-shadow:0 6px 12px rgba(0, 0, 0, .175);
+    min-width: 160px;
+    opacity: 0;
+    position: absolute;
+    right: -5.3em;
+    z-index: 3;
+
+    form {
+      min-width: 400px;
+      padding: 1em;
+
+      label {
+        display: none;
+      }
+    }
+
+    &::before {
+      @include transform(rotate(45deg));
+      background: $white;
+      content: '';
+      height: 2em;
+      position: absolute;
+      right: 6.2em;
+      top: 87%;
+      width: 2em;
+      z-index: -3;
+    }
+
+    li {
+      line-height: 1.8em;
+      list-style: none;
+      padding: .5em;
+    }
+  }
+}
 
 //-------[Tooltips]---------------------------------
 .tooltip {

@@ -9,6 +9,8 @@ es:
   destroy: borrar
   confirmation: esta seguro?
   login:
+    name_or_email: Nombre de usuario o Email
+    password: contraseña
     error: El email/nickname es incorrecto
     success: Bienvenido!
     logout: Sesion cerrada
@@ -21,14 +23,16 @@ es:
     create:
       success: Testimonio correctamente creado.
     new:
-      title: Crear nuevo testimonio
+      title: Crear testimonio
   workshops:
     title: talleres
     new:
-      title: nuevo taller
+      title: Crear taller
+  sessions:
+    close: cerrar sesion
   pages:
     new:
-      title: Crear nueva Pagina
+      title: Crear Pagina
     edit:
       title: Editando Pagina
     create:
@@ -37,6 +41,7 @@ es:
       success: Pagina actualizada correctamente.
   users:
     not_authorized: No tiene las credenciales necesarias
+    admin: administrador
     create:
       success: Usuario creado correctamente.
       error: Hubo problemas en la creacion del usuario, por favor revise el formulario.
@@ -45,7 +50,7 @@ es:
     edit:
       title: Editar administrador
     new:
-      title: Crear nuevo administrador
+      title: Crear administrador
   activerecord:
     attributes:
       testimony:

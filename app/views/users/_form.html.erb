@@ -3,6 +3,8 @@
   <%= form.input :email %>
   <%= form.input :password %>
   <%= form.input :password_confirmation %>
-  <%= form.input :admin, as: :boolean %>
-  <%= form.submit t('send') %>
+  <%= form.input :admin, label: t('users.admin'), as: :boolean %>
+  <div class="actions">
+    <%= form.submit t('send'), class: :button %>
+  </div>
 <% end %>

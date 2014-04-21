@@ -1,6 +1,10 @@
 <% if !notice.blank? %>
-    <div class="alert-box success">
+  <div class="alert success">
     <%= notice %>
   </div>
 <% end %>
+<% if !error.blank?  %>
+  <div class="alert error">
     <%= error %>
+  </div>
+<% end %>

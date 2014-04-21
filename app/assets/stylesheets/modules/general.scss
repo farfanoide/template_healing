@@ -147,13 +147,28 @@ hr:after { right: -1px; }
   padding: .5em;
 }
 
-.error {
-  background: $light-shadow;
-  color: $red;
-  border-radius: 3px;
+.alert {
+  border-radius: .2em;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+}
+
+form .error {
+  border-radius: .2em;
+  border: 1px solid $red;
   font-size: .7em;
   padding: .3em .5em;
-  text-shadow: 0 1px $white-shadow;
+}
+
+.success {
+  border-color: $green;
+  color: $green;
+}
+
+.error {
+  border-color: $red;
+  color: $red;
 }
 
 .button {
