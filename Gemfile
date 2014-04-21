@@ -65,5 +65,6 @@ gem 'globalize', '~> 4.0.0'
 # forms
 gem 'simple_form'
 
+ gem 'unicorn'
 
 ruby '2.1.1'
