@@ -57,7 +57,11 @@ gem 'nav_lynx'
 gem 'pg'
 gem 'rails_12factor', group: :production
 
-gem 'pry-rails', :group => :development
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'pry-rails'
+end
 
 # globalization
 gem 'globalize', '~> 4.0.0'
@@ -65,6 +69,6 @@ gem 'globalize', '~> 4.0.0'
 # forms
 gem 'simple_form'
 
- gem 'unicorn'
+gem 'unicorn'
 
 ruby '2.1.1'
