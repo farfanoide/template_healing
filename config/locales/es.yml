@@ -20,6 +20,8 @@ es:
       success: Testimonio correctamente actualizado.
     create:
       success: Testimonio correctamente creado.
+    new:
+      title: Crear nuevo testimonio
   workshops:
     title: talleres
     new:
@@ -34,6 +36,7 @@ es:
     update:
       success: Pagina actualizada correctamente.
   users:
+    not_authorized: No tiene las credenciales necesarias
     create:
       success: Usuario creado correctamente.
       error: Hubo problemas en la creacion del usuario, por favor revise el formulario.

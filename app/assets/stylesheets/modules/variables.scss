@@ -1,6 +1,7 @@
 // colors --------------------------------------
 $white        : #f5f5f5;
 $gray         : rgba(128, 128, 128, .2);
+$medium-gray  : rgba(192, 192, 192, .35);
 $dark-gray    : #5b5b5b;
 $green        : #1ecd97;
 $red          : #df7366;
@@ -11,3 +12,4 @@ $white-shadow : rgba(255,255,255,0.3);
 $layout-padding : 20px;
 $layout-margin  : 10px;
 
+$light-border: solid 1px $medium-gray;

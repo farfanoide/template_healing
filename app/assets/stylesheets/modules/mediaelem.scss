@@ -24,19 +24,6 @@
 }
 .tw-occu {font-size: .7em;}
 
-.actions {
-  color: transparent;
-  font-size: .6em ;
-  text-align: right;
-
-  a { border: 0; }
-}
-.admin-editable {
-  padding: 1em;
-}
-.admin-editable:hover .actions{
-  color: $dark-gray;
-}
 // .media.twitter
 //   p
 //     margin-bottom: 2px

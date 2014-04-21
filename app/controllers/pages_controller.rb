@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   before_action :set_page, only: [:show, :edit, :update, :destroy]
+  before_action :authorize, except: [:show, :index, :home]
 
   # GET /pages
   def index

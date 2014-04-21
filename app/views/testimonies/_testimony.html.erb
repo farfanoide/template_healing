@@ -11,10 +11,13 @@
         <%= testimony.content %>
       </blockquote>
     </div>
-    <div class="actions tw-actions">
-      <%= edit_link testimony %>
-      <%= destroy_link testimony %>
-    </div>
+
+    <% if current_user %>
+      <div class="actions tw-actions">
+        <%= edit_link testimony %>
+        <%= destroy_link testimony %>
+      </div>
+    <% end %>
     </section>
   </div>
 </div>

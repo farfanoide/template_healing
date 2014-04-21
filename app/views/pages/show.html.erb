@@ -3,8 +3,10 @@
   <div class="page-body">
     <%= simple_format @page.body %>
   </div>
-  <div class="actions">
-    <%= edit_link @page %>
-    <%= destroy_link @page %>
-  </div>
+  <% if current_user  %>
+    <div class="actions">
+      <%= edit_link @page %>
+      <%= destroy_link @page %>
+    </div>
+  <% end %>
 </div>

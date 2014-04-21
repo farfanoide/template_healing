@@ -6,6 +6,10 @@ class ApplicationController < ActionController::Base
 
   private
 
+  def authorize
+    redirect_to :root, error: t('users.not_authorized') unless current_user
+  end
+
   def current_user_id
     session[:user_id]
   end

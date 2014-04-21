@@ -13,7 +13,9 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+
+<body <%= 'class="admin"'.html_safe if current_user %>>
+
 <%= render 'pages_nav' %>
 
 <div class="wrapper">

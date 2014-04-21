@@ -222,16 +222,6 @@ form {
   vertical-align: middle;
 }
 
-.admin-editable {
-  @include box-sizing(border-box);
-  @include transition(border, .4s);
-  border: 1px dashed transparent;
-  border-radius: .2em;
-}
-
-.admin-editable:hover {
-  border: 1px dashed $dark-gray;
-}
 
 .cke_top, .cke_bottom {
   background: $white !important;
