@@ -38,3 +38,4 @@ Workshop.create!(
   title: ' Level 5 | I AM ',
   description: ' Utilizando las herramientas de los talleres anteriores, hay una profundización del despertar de su verdadero yo. Esta clase proporciona una profunda limpieza de la realidad consensuada y creencias colectivas que le permite abrir a abrazar la libertad, la alegría natural y el flujo de la vida.  '
 )
+User.create!(nickname: 'admin', email: 'ivan6258@gmail.com', password: 'admin', password_confirmation: 'admin', admin: TRUE)
