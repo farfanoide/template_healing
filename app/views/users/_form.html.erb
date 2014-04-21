@@ -1,0 +1,8 @@
+<%= simple_form_for(@user) do |form| %>
+  <%= form.input :nickname %>
+  <%= form.input :email %>
+  <%= form.input :password %>
+  <%= form.input :password_confirmation %>
+  <%= form.input :admin, as: :boolean %>
+  <%= form.submit t('send') %>
+<% end %>

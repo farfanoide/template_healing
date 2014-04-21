@@ -1,8 +1,11 @@
 TemplateHealing::Application.routes.draw do
+
   mount Ckeditor::Engine => '/ckeditor'
   post 'manual_select' => 'application#manual_select', as: :set_locale
 
   scope ":locale", locale: /#{I18n.available_locales.join("|")}/ do
+    resources :sessions, only: [:create, :destroy]
+    resources :users
     resources :pages
     resources :workshops
     resources :testimonies

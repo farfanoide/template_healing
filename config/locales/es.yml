@@ -2,11 +2,16 @@ es:
   language:
     name: Español
   cancel: cancelar
+  send: enviar
   save: guardar
   back: volver
   edit: editar
   destroy: borrar
   confirmation: esta seguro?
+  login:
+    error: El email/nickname es incorrecto
+    success: Bienvenido!
+    logout: Sesion cerrada
   testimonies:
     title: testimonios
     edit:
@@ -29,6 +34,11 @@ es:
     update:
       success: Pagina actualizada correctamente.
   users:
+    create:
+      success: Usuario creado correctamente.
+      error: Hubo problemas en la creacion del usuario, por favor revise el formulario.
+    update:
+      success: Usuario actualizado correctamente.
     edit:
       title: Editar administrador
     new:
@@ -43,6 +53,12 @@ es:
       models:
         user:
           attributes:
+            email:
+              taken: El email ya esta tomado
+              blank: El email no puede estar en blanco
+            nickname:
+              taken: El apodo ya esta tomado
+              blank: El apodo no puede estar en blanco
             password:
               blank: La contraseña no puede estar en blanco
             password_confirmation:

@@ -2,7 +2,17 @@ class ApplicationController < ActionController::Base
   before_filter :fetch_pages, :set_locale
   protect_from_forgery with: :exception
 
+  add_flash_types :error
+
   private
+
+  def current_user_id
+    session[:user_id]
+  end
+
+  def current_user
+    @current_user ||= User.find(current_user_id) if current_user_id
+  end
 
   def fetch_pages
     @pages = Page.all
@@ -16,4 +26,5 @@ class ApplicationController < ActionController::Base
     {locale: I18n.locale}
   end
 
+  helper_method :current_user
 end

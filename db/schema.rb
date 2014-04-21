@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140420201413) do
+ActiveRecord::Schema.define(version: 20140420231850) do
 
   create_table "ckeditor_assets", force: true do |t|
     t.string   "data_file_name",               null: false
@@ -71,6 +71,15 @@ ActiveRecord::Schema.define(version: 20140420201413) do
 
   add_index "testimony_translations", ["locale"], name: "index_testimony_translations_on_locale", using: :btree
   add_index "testimony_translations", ["testimony_id"], name: "index_testimony_translations_on_testimony_id", using: :btree
+
+  create_table "users", force: true do |t|
+    t.string   "nickname"
+    t.string   "email"
+    t.string   "password_digest"
+    t.boolean  "admin"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "workshop_translations", force: true do |t|
     t.integer  "workshop_id", null: false

@@ -1,15 +1,23 @@
 <nav class="footer-nav">
-  <ul class="main-nav">
-    <% I18n.available_locales.each do |locale| %>
-      <li><%= nav_link_to image_tag("#{locale}.png", class: :flag) + locale.to_s, locale: locale %></li>
-    <% end %>
-    <li class="dropup">
-      <%= iconize :users %>
-      <ul class="drop-container">
-        <li><a href="#">somethin</a></li>
-        <li><a href="#">somethin</a></li>
-        <li><a href="#">somethin</a></li>
-      </ul>
-    </li>
+<ul class="main-nav">
+  <% I18n.available_locales.each do |locale| %>
+    <li><%= nav_link_to image_tag("#{locale}.png", class: :flag) + locale.to_s, locale: locale %></li>
+  <% end %>
+  <li class="dropup">
+  <%= iconize :users %>
+  <ul class="drop-container">
   </ul>
+  </li>
+</ul>
 </nav>
+  <% if current_user %>
+    <li> <%= current_user.nickname  %> </li>
+    <br />
+    <li> <%= link_to 'salir', session_path('current'), method: 'delete', class: :button  %> </li>
+  <% else %>
+    <%= simple_form_for :sessions, { url: sessions_path} do |f| %>
+      <%= f.input :login %>
+      <%= f.input :password %>
+      <%= f.button :submit %>
+    <% end %>
+  <% end %>
