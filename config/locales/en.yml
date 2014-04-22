@@ -1,20 +1,29 @@
 en:
   language:
     name: English
+  cancel: cancel
+  send: send
   save: save
   back: back
   edit: edit
   destroy: destroy
   confirmation: are you sure?
+  login:
+    name_or_email: username or email
+    password: password
+    error: invalid username or password
+    success: Welcome!
+    logout: Bye
   testimonies:
     title: testimonies
     edit:
       title: edit testimony
+    new:
+      title: create testimony
   workshops:
     title: workshops
     new:
-      title: new workshop
-      action: new workshop
+      title: create workshop
     edit:
       title: edit workshop
   page:
@@ -22,11 +31,15 @@ en:
       success: Page successfully created
     update:
       success: Pagina actualizada correctamente.
+    new:
+      title: create page
   users:
     edit:
       title: Editar administrador
     new:
       title: Crear nuevo administrador
+    new:
+      title: create user
   activerecord:
     attributes:
       testimony:

@@ -161,24 +161,24 @@ nav a:focus {
     &::before {
       @include transform(rotate(45deg));
       background: $white;
+      bottom: -.5em;
       content: '';
       height: 2em;
       position: absolute;
       right: 6.2em;
-      top: 87%;
       width: 2em;
       z-index: -3;
     }
 
     li {
+      border-bottom: 1px solid $medium-gray;
+      border-top: 1px solid #fff;
       line-height: 1.8em;
       list-style: none;
       padding: .5em;
-      border-bottom: 1px solid $medium-gray;
-      border-top: 1px solid #fff;
 
-      &:first-of-type {border-top: 0;}
-      &:last-of-type{ border-bottom: 0; }
+      &:first-of-type { border-top: 0; }
+      &:last-of-type { border-bottom: 0; }
 
     }
   }
