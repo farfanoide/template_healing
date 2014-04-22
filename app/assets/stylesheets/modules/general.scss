@@ -102,11 +102,11 @@ p { text-align: justify; }
 
 br.clear { clear: both; }
 
-header { margin: 0 0 1em 0; }
+header { margin: 0 0 1em; }
 
 header .byline { margin-bottom: 2em; }
 
-footer { margin: 2.5em 0 0 0; }
+footer { margin: 2.5em 0 0; }
 
 hr {
   border: 0;
@@ -121,13 +121,13 @@ hr {
 
 hr:before,
 hr:after {
+  background: $gray;
   content: '';
+  display: block;
+  height: 21px;
   position: absolute;
   top: -8px;
-  display: block;
   width: 1px;
-  height: 21px;
-  background: $gray;
 }
 
 hr:before { left: -1px; }
@@ -155,8 +155,8 @@ hr:after { right: -1px; }
 }
 
 form .error {
-  border-radius: .2em;
   border: 1px solid $red;
+  border-radius: .2em;
   font-size: .7em;
   padding: .3em .5em;
 }
@@ -173,8 +173,8 @@ form .error {
 
 .button {
   background: $red;
-  border-radius: 3px;
   border: 0;
+  border-radius: .3em;
   color: $white;
   cursor: pointer;
   display: inline-block;
@@ -212,6 +212,8 @@ form {
     border-radius: 3px;
     padding: .3em;
     width: 100%;
+    line-height: 1.85em;
+    text-align: baseline;
 
     &:focus, &:active {
       @include box-shadow(inset 0 0 3px $gray);

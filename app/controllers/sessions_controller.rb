@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
     end
     if user && user.authenticate(session_params[:password])
       session[:user_id] = user.id
-      redirect_to :root, notice: t('login.success')
+      redirect_to :back, notice: t('login.success')
     else
       redirect_to :back, error: t('login.error')
     end
