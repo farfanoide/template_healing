@@ -172,13 +172,12 @@ nav a:focus {
 
     li {
       border-bottom: 1px solid $medium-gray;
-      border-top: 1px solid #fff;
       line-height: 1.8em;
       list-style: none;
       padding: .5em;
+      box-shadow: #fff 0 1px;
 
-      &:first-of-type { border-top: 0; }
-      &:last-of-type { border-bottom: 0; }
+      &:last-of-type { border-bottom: 0; box-shadow: none; }
 
     }
   }
