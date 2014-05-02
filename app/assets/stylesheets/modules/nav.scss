@@ -136,6 +136,8 @@ nav a:focus {
     display: block;
   }
 
+  .drop-container.active { display: block; }
+
   .drop-container {
     @include transition(opacity, .3s, ease-in);
     background: $white;
