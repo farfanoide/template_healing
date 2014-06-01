@@ -14,7 +14,7 @@ module ApplicationHelper
   end
 
   def destroy_link(object)
-    link_to iconize(:remove),
+    link_to iconize(:trash),
       polymorphic_path(object),
       method: :delete,
       data: { confirm: t('confirmation') }
