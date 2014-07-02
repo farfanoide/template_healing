@@ -5,19 +5,20 @@ module ApplicationHelper
   end
 
   def edit_link(object)
-    # TODO: add tooltips
-    link_to iconize(:pencil), edit_polymorphic_path(object)
+    link_to iconize(:pencil), edit_polymorphic_path(object), data: {tooltip: t('edit')}, class: 'tooltip-top'
   end
 
   def new_link(object)
-    link_to iconize(object.class.to_s.downcase), new_polymorphic_path(object)
+    link_to iconize(object.class.to_s.downcase), new_polymorphic_path(object), data: {tooltip: t('create')}, class: 'tooltip-top'
+
   end
 
   def destroy_link(object)
     link_to iconize(:trash),
       polymorphic_path(object),
       method: :delete,
-      data: { confirm: t('confirmation') }
+      data: { confirm: t('confirmation'), tooltip: t('destroy') },
+      class: 'tooltip-top'
   end
 
   def show_link(object)
