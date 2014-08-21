@@ -1,6 +1,7 @@
 class SessionsController < ApplicationController
 
   def create
+    p 'sarasa'
     if session_params[:login].match(/@/)
       user = User.find_by_email(session_params[:login])
     else

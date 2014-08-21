@@ -3,11 +3,13 @@ _about_body = "<h2>&iquest;Qu&eacute; es una plantilla?</h2>\r\n\r\n<p>Una plant
 Page.create(title: "nosotros", body: _about_body)
 
 _jen_content = 'Después de completar el curso de Sanación 1 Plantilla nivel hace más de un año, estoy sorprendido por la cantidad de un cambio que todavía estoy experimentando. La profundidad de la transformación ha ido mucho más allá de mis expectativas. Siento, veo y experimento la vida con más conciencia y la conexión de lo que nunca imaginé. He explorado muchas terapias holísticas y complementarias, pero la curación Plantilla va más allá de mi experiencia con alguno de ellos.Los primeros días del curso, yo era consciente de cuánto estaba cambiando, pero en las semanas y meses siguientes, el hecho de que esta forma de realización y la absorción se siguen sucediendo y sigue ocurriendo es increíble. Espero que aún más la exploración y la relación con la plantilla en el futuro. '
-Testimony.create!(person: 'jennifer', occupation: 'Bailarina Profesional', content: _jen_content)
 _jac_content = 'La primera vez que oí hablar de la creación de la plantilla hace cuatro años en un momento en que me sentí atrapado y era consciente de que yo no estaba contento conmigo mismo. He completado ya que los cuatro primeros niveles. Plantilla de la Creación que me dio las herramientas para transformar algunas de las creencias fundamentales que había en poder sobre mí que me impidió realizar mis metas. Plantilla de la Creación es un viaje de auto descubrimiento y sanación, es un camino que me permitió hacer las conexiones del corazón con los demás y curo de este lugar. Me ha ayudado a aceptarme por lo que soy. Me siento despierta a la vida ahora. Sé que el potencial puro y la libertad de vivir de la verdad de lo que realmente soy. Estoy ilusionado con nivel 5 y estar en la presencia algunos maravillosos e inspiradores maestros.  '
-Testimony.create!(person: 'jacintha', occupation: 'Escritora y Horticultora', content: _jac_content)
 _lyn_content = ' Los cursos de creación de plantillas son una experiencia totalmente transformadora. Puedes profundizar en los lugares de su ser que nunca han tenido acceso antes posible. Esto le deja con una nueva perspectiva de la vida, lo que permite una conexión más profunda con todo lo que es. Los talleres son la iluminación tan inspirador y sube. Estoy eternamente agradecido por este increíble trabajo y haber participado en el Nivel 1 y Nivel 2 talleres, espero poder continuar mis estudios con los siguientes cursos de capacitación.'
-Testimony.create!(person: 'lynn', occupation: 'Instructor de Yoga', content: _lyn_content)
+Testimony.create([
+  { person: 'jennifer', occupation: 'Bailarina Profesional', content: _jen_content },
+  { person: 'jacintha', occupation: 'Escritora y Horticultora', content: _jac_content },
+  { person: 'lynn', occupation: 'Instructor de Yoga', content: _lyn_content }
+])
 # bogus
 Testimony.create!(person: 'mama', occupation: 'madre', content: 'ponete el poncho q hace frio')
 Testimony.create!(person: 'magolla', occupation: 'developer', content: 'zarpado en vim fieja!')
