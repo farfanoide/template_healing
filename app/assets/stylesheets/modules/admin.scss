@@ -1,7 +1,10 @@
+#submit-sort { display: none }
 #sortable.sorting{
   cursor: move;
   .info, .actions { display: none }
-  .admin-editable { padding: 0 }
+  .admin-editable { padding: 0 1em }
+  .title          { padding: 0; margin: .5em }
+  #submit-sort    { display: block }
 }
 .admin {
   .actions {
