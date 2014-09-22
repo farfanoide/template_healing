@@ -1,6 +1,7 @@
 <li><%= link_to t('pages.new.title'), new_page_path  %></li>
 <li><%= link_to t('workshops.new.title'), new_workshop_path  %></li>
 <li><%= link_to t('testimonies.new.title'), new_testimony_path  %></li>
+<li><%= link_to t('testimonies.sort.init'), '#', id: 'sort-testimonies'%></li>
 <% if current_user.admin? %>
   <li><%= link_to t('users.new.title'), new_user_path  %></li>
 <% end %>

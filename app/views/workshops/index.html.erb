@@ -1,4 +1,7 @@
 <h1 class="page-title"><%= t 'workshops.title' %></h1>
 
-<%= render @workshops %>
+<div id="sortable">
+  <%= render @workshops %>
+  <%= link_to t('testimonies.sort.submit'), '#', id: 'submit-sort' %>
+</div>
 
